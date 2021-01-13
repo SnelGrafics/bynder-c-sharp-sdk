@@ -9,13 +9,13 @@ namespace Bynder.Sdk.Query.Upload
 {
     internal class SaveMediaQuery
     {
-        [ApiField("brandid")]
-        internal string BrandId { get; set; }
+        [ApiField("brandId")]
+        public string BrandId { get; set; }
 
         [ApiField("name")]
-        internal string Filename { get; set; }
+        public string Filename { get; set; }
 
         [ApiField("tags", Converter = typeof(ListConverter))]
-        internal IList<string> Tags { get; set; }
+        public IList<string> Tags { get; set; }
     }
 }
